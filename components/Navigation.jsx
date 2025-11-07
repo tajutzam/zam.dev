@@ -12,20 +12,24 @@ import clsx from "clsx";
 const links = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Work And Projects", href: "/projects" },
+  { label: "Projects", href: "/projects" },
+  { label: "Experience", href: "/experience" },
   { label: "Gear", href: "/gear" },
   { label: "Contact", href: "/contact" },
 ];
 
 export default function Navigation() {
-  const pathname = `/${usePathname().split("/")[1]}`; // active paths on dynamic subpages
+  const pathname = `/${usePathname().split("/")[1]}`;
 
   return (
     <MotionNav className={clsx("relative md:sticky top-0 z-20 backdrop-blur")}>
-      <nav className="px-4 md:px-6 py-3 lg max-w-[1100px] mx-auto flex justify-between items-center gap-3">
+      <nav className="px-4 md:px-6 py-3 max-w-[1100px] mx-auto flex justify-between items-center gap-3">
+        {/* Logo */}
         <Link href="/" className="shrink-0 flex gap-2 uppercase text-primary">
           <h1 className="uppercase font-bold text-md">Zam.DEV</h1>
         </Link>
+
+        {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-1">
           {links.map((link) => (
             <li key={link.href}>
@@ -33,6 +37,8 @@ export default function Navigation() {
             </li>
           ))}
         </ul>
+
+        {/* Mobile Menu */}
         <Popover className="relative ml-auto md:hidden">
           <Popover.Button className="flex items-center gap-1 text-secondary p-1 rounded-lg focus-visible:outline-none focus:ring-0">
             <Bars3BottomLeftIcon className="w-6 h-6" />
@@ -68,6 +74,7 @@ export default function Navigation() {
           </Transition>
         </Popover>
 
+        {/* Theme Switcher */}
         <div className="flex items-center justify-center w-8 h-8">
           <ThemeSwitcher />
         </div>

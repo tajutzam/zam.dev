@@ -5,8 +5,8 @@ import Head from "next/head";
 import { Jost } from "next/font/google";
 
 import "./globals.css";
-import ThemeProvider from "@/components/ThemeProvider";
 import clsx from "clsx";
+import ThemeProvider from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
 
 const jost = Jost({ subsets: ["latin"] });
@@ -19,9 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
+      <Head>{/* <link rel="icon" href="/favicon.ico" /> */}</Head>
       <body
         className={clsx(
           jost.className,
