@@ -27,6 +27,15 @@ const projects = [
     alt: "Reda Bolo Hospital Project Image",
     src: shri,
   },
+  {
+    nameApps: "Company Profile With CMS – Ray Souvenir Bandung",
+    company: "Ray Souvenir",
+    category: "Fullstack | Laravel",
+    description:
+      "I developed a website for the needs of souvenir shops in Bandung professionally",
+    alt: "Ray Souvenir Image",
+    src: shri,
+  },
 ];
 
 export default function Contact() {
