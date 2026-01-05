@@ -1,6 +1,8 @@
 import ProjectSection from "@/components/ProjectSection";
 import dikantin from "@/public/images/Dkantin.png";
 import shri from "@/public/images/Shri.png";
+import ray from "@/public/images/ray-souvenir.png";
+
 
 export const metadata = {
   title: "ZAM.DEV | Work And Projects",
@@ -34,7 +36,7 @@ const projects = [
     description:
       "I developed a website for the needs of souvenir shops in Bandung professionally",
     alt: "Ray Souvenir Image",
-    src: shri,
+    src: ray,
   },
 ];
 
