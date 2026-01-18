@@ -2,7 +2,7 @@ import ProjectSection from "@/components/ProjectSection";
 import dikantin from "@/public/images/Dkantin.png";
 import shri from "@/public/images/Shri.png";
 import ray from "@/public/images/ray-souvenir.png";
-
+import sibaru from "@/public/images/sibaru.png";
 
 export const metadata = {
   title: "ZAM.DEV | Work And Projects",
@@ -38,6 +38,15 @@ const projects = [
     alt: "Ray Souvenir Image",
     src: ray,
   },
+  {
+    nameApps: "SIBARU | Sistem Informasi Integrasi Rutan Boyolali",
+    company: "Rutan Boyolali",
+    category: "Fullstack | Laravel",
+    description:
+      "Developed a QR Code-based Inmate Proposal Information System for detention centers (Rutan) using the Laravel framework. This system digitizes and accelerates the submission process, ensuring better data accuracy and tracking.",
+    alt: "SIBARU",
+    src: sibaru,
+  },
 ];
 
 export default function Contact() {
@@ -48,8 +57,7 @@ export default function Contact() {
           Projects
         </h1>
         <p className="text-secondary animate-in" style={{ "--index": 1 }}>
-          Here are some of the projects I have done and some are still in
-          progress.
+          Here are some of the projects I have done ( Freelance )
         </p>
       </div>
 
