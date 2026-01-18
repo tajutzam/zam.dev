@@ -18,6 +18,7 @@ const projects = [
       "I developed a backend RESTful API using the Laravel framework for the DKantin application, which is used by Jember State Polytechnic. The system implements bearer token authentication for secure access.",
     alt: "Dkantin Project Image",
     src: dikantin,
+    url: "https://dikantin.com/",
   },
   {
     nameApps:
@@ -28,6 +29,7 @@ const projects = [
       "I developed a medical records system to manage and track patient admissions, discharges, and inpatient data for hospital reporting purposes.",
     alt: "Reda Bolo Hospital Project Image",
     src: shri,
+    url: "zam-dev.vercel.app",
   },
   {
     nameApps: "Company Profile With CMS – Ray Souvenir Bandung",
@@ -37,6 +39,7 @@ const projects = [
       "I developed a website for the needs of souvenir shops in Bandung professionally",
     alt: "Ray Souvenir Image",
     src: ray,
+    url: "https://raysouvenir.com",
   },
   {
     nameApps: "SIBARU | Sistem Informasi Integrasi Rutan Boyolali",
@@ -46,6 +49,7 @@ const projects = [
       "Developed a QR Code-based Inmate Proposal Information System for detention centers (Rutan) using the Laravel framework. This system digitizes and accelerates the submission process, ensuring better data accuracy and tracking.",
     alt: "SIBARU",
     src: sibaru,
+    url: "https://sibaru.web.id",
   },
 ];
 
@@ -74,6 +78,7 @@ export default function Contact() {
               description={project.description}
               nameApps={project.nameApps}
               src={project.src}
+              url={project.url}
             />
           </div>
         ))}

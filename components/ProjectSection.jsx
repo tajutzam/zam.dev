@@ -9,6 +9,7 @@ export default function ProjectSection({
   nameApps,
   company,
   description,
+  url,
 }) {
   return (
     <>
@@ -26,7 +27,10 @@ export default function ProjectSection({
           className="bg-secondary"
         />
         <h2>
-          <strong>{category}</strong> | {nameApps}
+          <strong>{category}</strong> |{" "}
+          <a href={url} target="_blank">
+            {nameApps}
+          </a>
         </h2>
         <h2>
           <strong>{company}</strong>
